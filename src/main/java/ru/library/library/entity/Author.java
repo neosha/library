@@ -3,6 +3,7 @@ package ru.library.library.entity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -11,7 +12,8 @@ import java.util.UUID;
 @Table(name= "author")
 @Getter
 @Setter
-public class Author {
+@Where(clause = "is_deleted in 'N'")
+public class Author  extends SoftDelete {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;

@@ -20,9 +20,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import org.springframework.stereotype.Repository;
 import ru.library.library.entity.Journal;
 import ru.library.library.entity.JournalNew;
+import ru.library.library.job.processor.JournalNewProcessor;
+import ru.library.library.job.writer.JournalNewWriter;
 
 import javax.sql.DataSource;
 import java.util.HashMap;

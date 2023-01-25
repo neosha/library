@@ -1,4 +1,4 @@
-package ru.library.library.config;
+package ru.library.library.job.processor;
 
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;

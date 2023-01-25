@@ -1,4 +1,4 @@
-package ru.library.library.config;
+package ru.library.library.job.writer;
 
 
 import org.springframework.batch.item.ItemWriter;

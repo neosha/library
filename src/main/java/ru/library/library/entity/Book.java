@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Table(name = "book")
 @Getter
 @Setter
-public class Book {
+public class Book  extends SoftDelete{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
